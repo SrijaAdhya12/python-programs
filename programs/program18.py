@@ -1,0 +1,1 @@
+print(f"{input("enter anything")} " * 4 )

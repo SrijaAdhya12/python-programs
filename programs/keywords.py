@@ -1,0 +1,25 @@
+# #Command:
+# help("keywords")
+
+# False 
+# class
+# or
+# None
+# continue
+# pass
+# True
+# def
+# if
+# and
+# import
+# return
+# elif
+# in
+# else
+# is
+# while
+# break
+# for 
+# not
+# lambda
+# key
