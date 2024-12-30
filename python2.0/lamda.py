@@ -7,3 +7,4 @@ people = [{"name": "Srija", "age": 20},
 people.sort(lambda person: person['age'])
 
 double= lambda x: x*2
+average= lambda x,y: (x+y)/2
