@@ -16,3 +16,4 @@ number: int = 10 #type annotation
 
 def upper_everything(elements: list[str]) -> list[str]:
     return [element.upper() for element in elements]
+
