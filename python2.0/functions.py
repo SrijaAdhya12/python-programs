@@ -1,16 +1,16 @@
-# def greet() -> None:
-#     print('Hello World')
+def greet() -> None:
+    print('Hello World')
 
-# def bye() -> None:
-#     print('Bye World')
+def bye() -> None:
+    print('Bye World')
 
 
-# def main() -> None:
-#     greet()
-#     bye()
+def main() -> None:
+    greet()
+    bye()
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
 
 
 def is_an_adult(age:int, has_id:bool) -> bool:
@@ -38,3 +38,26 @@ if __name__ == '__main__':
     main()
 
 
+#zip functions
+students= ['Alice', 'Bob', 'Charlie']
+grades = [90, 80, 70]
+
+#usde zip function to pair students and grades
+
+for student, grade in zip(students, grades):
+    print(f'{student} has a grade of {grade}')
+
+
+#get()
+words = ['Hello', 'World', 'Python']
+word_counts = {}
+
+for word in words:
+    word_counts[word] = word_counts.get(word, 0) + 1
+print(word_counts)
+
+#setdefault()
+student_grades = {}
+english_grades = student_grades.setdefault('Alice', {})
+english_grades['English'] = 90
+print(student_grades) #prints {'Alice': {'English': 90}}
