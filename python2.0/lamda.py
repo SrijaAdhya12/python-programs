@@ -4,4 +4,6 @@ people = [{"name": "Srija", "age": 20},
 ]
 
 #lambda function
-people.sort(key= lambda person: person['age'])
+people.sort(lambda person: person['age'])
+
+double= lambda x: x*2
