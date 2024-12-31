@@ -45,3 +45,22 @@ print(cansum(7,[2,4]))
 # time complexity: O(n*m)
 # space complexity: O(m)
 
+#memoization for howsum 
+
+def howsum(targetSum, numbers, memo=None):
+   if memo is None:
+      memo = {}
+   if targetSum in memo:
+      return memo[targetSum]
+   if targetSum == 0:   
+      return []
+   if targetSum < 0:
+      return None
+   for num in numbers:
+      reminder = targetSum - num
+      result = howsum(reminder, numbers, memo)
+      if result is not None:
+         memo[targetSum] = [num, *result]
+         return memo[targetSum]
+   memo[targetSum] = None
+   return None
