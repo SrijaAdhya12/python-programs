@@ -22,7 +22,9 @@ print(canSum(7,[2,4]))
 
 #memoization
 
-def cansum(targetSum, numbers, memo={}):
+def cansum(targetSum, numbers, memo=None):
+   if memo is None:
+      memo = {}
    if targetSum in memo:
       return memo[targetSum]
    if targetSum == 0:
