@@ -65,3 +65,27 @@ def find_word(sen,req):
 sen = input("Enter a sentence")
 req= input("Enter the word required ")
 print(find_word(sen, req))
+
+#LONGEST WORD IN A STRING
+
+def longest_word(sen):
+    words = sen.split()
+    max_length=""
+    for word in words:
+        if len(word) >len(max_length):
+            return word
+
+
+sen = input("Enter a sentence")
+print(longest_word(sen))
+
+#CAPITALISE NTH LETTER OF A SENTENCE
+
+def capital_letter(sen,index):
+    words = list(sen)
+    return words[index].upper()
+
+
+sen = input("Enter a sentence")
+index = int(input("Enter the index to be capitalised"))
+print(capital_letter(sen, index))
