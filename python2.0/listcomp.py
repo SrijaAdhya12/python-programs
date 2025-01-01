@@ -74,5 +74,39 @@ print(my_list)
 #falsy values- False, None, 0, "" , {} , set(), [], ()
 
 
+my_list = []
+my_list = list()
+my_list.append(1)
+nested_list = [[1,2] , 3 , 4 ,5]
+(a,b), *unused = nested_list
+
+str1= str([1,2,3,4])
+a = exec(str1) 
+print(a)
 
 
+a = eval(str1) 
+print(a)
+print(type(a))
+
+students = {"name": "John", "age": 23, "Subjects": "CompSci"}
+print(students["name"])
+print(len(students))
+print(students.keys())
+print(students.values())
+print(students.items())
+
+
+print(list(filter(lambda x: x != 3, [1, 2, 3, 4])))
+print(list(filter(lambda x: x%2==0, [1, 2, 3, 4])))
+
+list_input = input("Enter a list")
+my_list = list_input.split()
+
+
+my_list = map(lambda n : n*n, nums) 
+print(list(my_list))
+
+
+my_evenlist = filter(lambda n: n%2==0, nums)
+print(list(my_evenlist))
