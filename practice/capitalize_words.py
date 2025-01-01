@@ -10,3 +10,8 @@ def capital_letters(line):
 
 sentence = input("Enter a sentence: ")
 print(capital_letters(sentence))
+
+
+my_list = ["Srija", "Pritam"]
+my_str = " ".join(my_list)
+print(my_str)
