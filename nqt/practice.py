@@ -48,4 +48,17 @@ def max_char(strng):
 
 my_str = input("Enter a string: ") 
 print(max_char(my_str))
-        
+
+
+# maximum length word in a string
+
+def max_word(str):
+    word_list = str.split()
+    longest_word = ""
+    for word in word_list:
+        if len(word) > len(longest_word):
+            longest_word = word
+    return longest_word
+
+my_str = input("Enter a string: ")
+print(max_word(my_str))
