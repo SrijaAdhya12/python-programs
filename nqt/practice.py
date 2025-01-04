@@ -62,3 +62,21 @@ def max_word(str):
 
 my_str = input("Enter a string: ")
 print(max_word(my_str))
+
+# remove all duplicates from the input string
+
+def remove_duplicate(strng):
+    my_list = []
+    my_set ={}
+    for char in strng:
+        if char not in my_set:
+            my_list.append(char)
+            my_set = char
+    return "".join(my_list)
+
+my_str =  input("Enter a string: ")
+print(remove_duplicate(my_str))
+
+
+
+
