@@ -93,13 +93,11 @@ print(f"{ " ".join(a)=}") #joins with * in between
 print(f"{ "Pritam".replace("i","x")=}") #joins with * in between
 print(f"{ "Pritam".swapcase()=}") #joins with * in between
 print(f"{ " ".join(a).title()=}") #converts to title case
-print(f"{ " Pritam".lstrip(" ").lstrip("P")=}") #joins with * in between
-print(f"{ " Pritam ".strip(" ")=}") #joins with * in between
-print(f"{ " Pritam ".rstrip(" ")=}") #joins with * in between
-
+print(f"{ " Pritam".lstrip(" ").lstrip("P")=}") #joins with P in between
+print(f"{ " Pritam ".strip(" ")=}") #removes space from sides
+print(f"{ " Pritam ".rstrip(" ")=}") #removes space from right side
 str1 =""
 str2 =str()
-
 
 
 *_, lastchr = "HUIHUIHI"  # unpacking
