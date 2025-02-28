@@ -14,4 +14,16 @@ class Solution:
         if middle: odds.remove(middle)
         odd_sum = sum(i-1 for i in odds)
         return odd_sum + middle + even_sum
-        
+
+
+        #aba aabbaa 
+    
+    def longestPalindrome(self, s: str): -> str:
+        result = ""
+        length = 0
+        for i,v in enumerate(s):
+            
+
+
+
+
