@@ -9,4 +9,15 @@ def get_permutations(string, i=0):
 str = input("Enter a string: ")
 print(get_permutations(str))
         
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        if len(nums) == 1:
+            return [nums]
+        permutations = []
+        for i, element in enumerate(nums):
+            remaining_list = nums[:i] + nums[i+1:]
+            for perm in self.permute(remaining_list):
+                permutations.append([element] + perm)
+        return permutations
+
         
